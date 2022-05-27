@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llyd-deployment
+  labels:
+    app: llyd-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: llyd-app
+  template:
+    metadata:
+      labels:
+        app: llyd-app
+    spec:
+      containers:
+        - name: llyd-app
+          image: davidsdeveloper/llyd:v2
+          ports:
+            - containerPort: 80
