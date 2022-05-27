@@ -43,7 +43,7 @@ Contributors
 [davids.developer@outlook.com](mailto:davids.developer@outlook.com)
 Github Repo: [davidschepis](https://github.com/davidschepis).
 
-[davids.developer@outlook.com](mailto:davids.developer@outlook.com)
+[ha.cki@hotmail.es](mailto:ha.cki@hotmail.es)
 Github Repo: [liuvis05](https://github.com/liuvis05).
 
 [davids.developer@outlook.com](mailto:davids.developer@outlook.com)
