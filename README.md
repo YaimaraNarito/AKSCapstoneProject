@@ -51,5 +51,5 @@ Github Repo: [liuvis05](https://github.com/liuvis05).
 Github Repo: [yaimaraNarito](https://github.com/yaimaraNarito).
 
 [davids.developer@outlook.com](mailto:davids.developer@outlook.com)
-Github Repo: [davidschepis](https://github.com/davidschepis).
+Github Repo: [Lexington](https://github.com/davidschepis).
 
