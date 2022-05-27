@@ -46,7 +46,7 @@ Github Repo: [davidschepis](https://github.com/davidschepis).
 [davids.developer@outlook.com](mailto:davids.developer@outlook.com)
 Github Repo: [liuvis05](https://github.com/liuvis05).
 
-[davids.developer@outlook.com](mailto:davids.developer@outlook.com)
+[yaimara.r.nar@gmail.com](mailto:yaimara.r.nar@gmail.com)
 Github Repo: [yaimaraNarito](https://github.com/yaimaraNarito).
 
 [davids.developer@outlook.com](mailto:davids.developer@outlook.com)
