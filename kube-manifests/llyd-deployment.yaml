@@ -19,3 +19,4 @@ spec:
           image: davidsdeveloper/llyd:v2
           ports:
             - containerPort: 80
+            
