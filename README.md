@@ -48,9 +48,9 @@ Github Repo: [davidschepis](https://github.com/davidschepis).
 Github Repo: [liuvis05](https://github.com/liuvis05).
 
 [yaimara.r.nar@gmail.com](mailto:yaimara.r.nar@gmail.com)
-Github Repo: [yaimaraNarito](https://github.com/yaimaraNarito).
+Github Repo: [YaimaraNarito](https://github.com/YaimaraNarito).
 
 [lexington.Johnson@icloud.com](mailto:lexington.johnson@icloud.com)
-Github Repo: [notgnixel](https://github.com/notgnixel).
+Github Repo: [Notgnixel](https://github.com/Notgnixel).
 
 
