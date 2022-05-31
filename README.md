@@ -50,7 +50,7 @@ Github Repo: [liuvis05](https://github.com/liuvis05).
 [yaimara.r.nar@gmail.com](mailto:yaimara.r.nar@gmail.com)
 Github Repo: [yaimaraNarito](https://github.com/yaimaraNarito).
 
-[Lexington.Johnson@icloud.com](mailto:Lexington.Johnson@icloud.com)
-Github Repo: [Notgnixel](https://github.com/Notgnixel).
+[lexington.Johnson@icloud.com](mailto:lexington.johnson@icloud.com)
+Github Repo: [notgnixel](https://github.com/notgnixel).
 
 
