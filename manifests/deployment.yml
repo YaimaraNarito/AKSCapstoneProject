@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: llydapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: llydapp
+  template:
+    metadata:
+      labels:
+        app: llydapp 
+    spec:
+      containers:
+        - name: llydapp 
+          image: azurecontainerregistryyn.azurecr.io/llydapp
+          ports:
+          - containerPort: 3001
