@@ -8,6 +8,11 @@ docker run -it --name llyd -d -p 3001:3001 davidsdeveloper/llyd:v2
 docker push davidsdeveloper/llyd:v2
 
 ##kubernetes commands
+
+#create namespace
+kubectl create -f ./kube-manifests/namespace.yaml
+
+#deploy in namespace development
 az aks show --resource-group aks-rg3 --name aks-cluster --query nodeResourceGroup -o tsv
 
 az network public-ip create --resource-group <REPLACE-OUTPUT-RG-FROM-PREVIOUS-COMMAND> --name myAKSPublicIPForIngress --sku Standard --allocation-method static --query publicIp.ipAddress -o tsv

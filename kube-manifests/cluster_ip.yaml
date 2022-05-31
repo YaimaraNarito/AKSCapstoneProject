@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: development
   name: app1-nginx-clusterip-service
   labels:
     app: llyd-app
