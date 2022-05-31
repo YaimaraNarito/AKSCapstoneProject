@@ -1,0 +1,22 @@
+az account list
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "e99ecd00-de36-4988-8639-2b2be22a1c77",
+    "id": "30ac425c-ea17-4b90-badf-2af77b724338",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Azure subscription 1",
+    "state": "Enabled",
+    "tenantId": "e99ecd00-de36-4988-8639-2b2be22a1c77",
+    "user": {
+      "name": "ha.cki@hotmail.es",
+      "type": "user"
+    }
+  }
+]
+
+export ARM_CLIENT_ID=<insert the appId from above>
+export ARM_SUBSCRIPTION_ID=<insert your subscription id>
+export ARM_TENANT_ID=<insert the tenant from above>
+export ARM_CLIENT_SECRET=<insert the password from above>
