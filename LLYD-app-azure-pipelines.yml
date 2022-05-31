@@ -73,10 +73,7 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                $(Pipeline.Workspace)/kube-manifests/namespace.yaml
-                $(Pipeline.Workspace)/kube-manifests/cluster_ip.yaml
-                $(Pipeline.Workspace)/kube-manifests/ingress.yaml
-                $(Pipeline.Workspace)/kube-manifests/llyd-deployment.yaml
+                $(Pipeline.Workspace)/kube-manifests/
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
