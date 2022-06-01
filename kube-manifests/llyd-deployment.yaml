@@ -31,3 +31,17 @@ spec:
               port: 3001
             initialDelaySeconds: 15
             timeoutSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llyd-app-nginx-loadbalancer-service
+  labels:
+    app: llyd-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: llyd-app
+  ports:
+    - port: 80
+      targetPort: 3001
