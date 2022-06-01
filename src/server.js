@@ -25,7 +25,7 @@ app.get("*/roman/:num", (req, res) => {
 app.get("*/:num", (req, res) => {
     result = Number(req.params.num)
     if (isNaN(result)) {
-        res.sendFile(path.join(__dirname, "public/index.html"));
+        res.sendFile(path.join(__dirname, "public/roman.html"));
     }
     else {
         console.info(`${req.method} request received, responding with roman.html with param ${req.params.num}`);
