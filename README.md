@@ -8,12 +8,12 @@ Project utilizes AKS to host a docker container with a node.js application
 - [Links](#links)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [License](#license)
-- [Contributing](#contributing)
-- [Questions](#questions)
+- [Contributors](#contributors)
 
  ## Links
-https://github.com/davidschepis/AKSCapstoneProject
+https://github.com/YaimaraNarito/AKSCapstoneProject
 
 
  ## Installation
@@ -30,9 +30,19 @@ https://www.terraform.io/downloads
 ```
 
  ## Usage
- 1. Login using az login
- 2. Create namespaces deveopment, qa, staging, production
- 3. Create the cluster:
+ 1. Create github repo and clone all files into it
+ 2. Login to Azure on command line using: 
+    ```
+    az login
+    ```
+ 3. Create namespaces deveopment, qa, staging, production:
+    ```
+    kubectl create ns development
+    kubectl create ns qa
+    kubectl create ns staging
+    kubectl create ns production
+    ```
+ 4. Create the cluster:
 
     Run Terraform commands
     ```
@@ -41,22 +51,21 @@ https://www.terraform.io/downloads
     terraform plan -out tfplan.out
     terraform apply tfplan.out
     ```
- 4. Login to cluster using
+ 5. Login to cluster using:
      ```
      az aks get-credentials --resource-group aks-rg3 --name aks-cluster
      ```
- 5. Create a Project on dev.azure.com
- 6. Create build pipeline connected to github repo associated with code source, link to Azure subscription
- 7. Create release pipeline with artifact and stages (development, qa, staging, production)
+ 6. Create a Project on dev.azure.com
+ 7. Create build pipeline connected to github repo associated with code source, link to Azure subscription
+ 8. Create release pipeline with artifact and stages (development, qa, staging, production)
+
+ ## Screenshots
+
 
  ## License
 This project is not licensed
 
- ## Contributing
-Please contact us if you wish to contribute
-
- ## Questions
-Contributors
+ ## Contributors
 
 [davids.developer@outlook.com](mailto:davids.developer@outlook.com)
 Github Repo: [davidschepis](https://github.com/davidschepis).
