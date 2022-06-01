@@ -61,6 +61,13 @@ https://www.terraform.io/downloads
 
  ## Screenshots
 ![Alt text](Screenshots/1_Create_new_pipeline_in_azure_devops.png)
+![Alt text](Screenshots/2_connect_to_code_on_GitHub.png)
+![Alt text](Screenshots/3_Choose_Configuration_for_your_Pipeline.png)
+![Alt text](Screenshots/4_Connect_to_Azure.png)
+![Alt text](Screenshots/5_Validate_and_Configure.png)
+![Alt text](Screenshots//6_Save_and_Run.png)
+![Alt text](Screenshots/7_Built_Successfull.png)
+![Alt text](Screenshots/8_Deploy_Successfull.png)
 
 
  ## License
