@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: llyd-app
-          image: davidsdeveloper/llyd:v2
+          image: azurecontainerregistryyn.azurecr.io/llyd
           ports:
             - containerPort: 80
             

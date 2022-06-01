@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-app.get("*/ping", (req, res) => {
+app.get("/ping", (req, res) => {
     console.info(`${req.method} request received, responding with pong.html`);
     res.sendFile(path.join(__dirname, "public/pong.html"));
 });
