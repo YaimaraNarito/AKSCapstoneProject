@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: llyd-app-ingress-service
+spec: 
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /#{env}#/
+        pathType: Prefix
+        backend:
+          service:
+            name: app1-nginx-clusterip-service
+            port:
+              number: 80
+              
