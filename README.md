@@ -60,6 +60,7 @@ https://www.terraform.io/downloads
  8. Create release pipeline with artifact and stages (development, qa, staging, production)
 
  ## Screenshots
+![Alt text](Screenshots/1_Create_new_pipeline_in_azure_devops.png)
 
 
  ## License
