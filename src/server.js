@@ -18,6 +18,10 @@ app.get("/version", (req, res) => {
     res.sendFile(path.join(__dirname, "public/version.html"));
 });
 
+app.get("/roman/:num", (req, res) => {
+    res.redirect(`/roman.html?num=${req.params.num}`)
+});
+
 app.get("/:num", (req, res) => {
     result = Number(req.params.num)
     if (isNaN(result)) {
