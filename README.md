@@ -9,6 +9,7 @@ Project utilizes AKS to host a docker container with a node.js application
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
+- [Testing](#testing)
 - [License](#license)
 - [Contributors](#contributors)
 
@@ -78,7 +79,7 @@ https://www.terraform.io/downloads
 ![Alt text](Screenshots/7_Built_Successfull.png)
 ![Alt text](Screenshots/8_Deploy_Successfull.png)
 
-##Testing
+ ##Testing
 Run this commands on your CLI then get the EXTERNAL-IP of each to test your application on the browser.
 
 ```
