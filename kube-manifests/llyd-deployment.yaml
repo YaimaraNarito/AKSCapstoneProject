@@ -17,8 +17,21 @@ spec:
       containers:
         - name: llyd-app
           image: azurecontainerregistryyn.azurecr.io/llyd
+          imagePullPolicy: Always
           ports:
             - containerPort: 3001
+          livenessProbe:
+            httpGet:
+              path: /ping
+              port: 3001
+            initialDelaySeconds: 15
+            timeoutSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /ping
+              port: 3001
+            initialDelaySeconds: 15
+            timeoutSeconds: 30
 ---
 apiVersion: v1
 kind: Service
