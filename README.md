@@ -30,7 +30,24 @@ https://www.terraform.io/downloads
 ```
 
  ## Usage
-Please modify terraform files to utilize your Azure account
+ 1. Login using az login
+ 2. Create namespaces deveopment, qa, staging, production
+ 3. Create the cluster:
+
+    Run Terraform commands
+    ```
+    terraform init
+    terraform validate
+    terraform plan -out tfplan.out
+    terraform apply tfplan.out
+    ```
+ 4. Login to cluster using
+     ```
+     az aks get-credentials --resource-group aks-rg3 --name aks-cluster
+     ```
+ 5. Create a Project on dev.azure.com
+ 6. Create build pipeline connected to github repo associated with code source, link to Azure subscription
+ 7. Create release pipeline with artifact and stages (development, qa, staging, production)
 
  ## License
 This project is not licensed
