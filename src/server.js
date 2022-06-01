@@ -25,7 +25,7 @@ app.get("/:num", (req, res) => {
     }
     else {
         console.info(`${req.method} request received, responding with roman.html with param ${req.params.num}`);
-        res.redirect(`/roman/${req.params.num}`)
+        res.redirect(`/roman.html?num=${req.params.num}`)
     }
 });
 
