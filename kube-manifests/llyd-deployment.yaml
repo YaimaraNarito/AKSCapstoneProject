@@ -18,16 +18,16 @@ spec:
         - name: llyd-app
           image: azurecontainerregistryyn.azurecr.io/llyd
           ports:
-            - containerPort: 80
+            - containerPort: 3001
           livenessProbe:
             httpGet:
               path: /ping
-              port: nodejs-port
+              port: 3001
             initialDelaySeconds: 15
             timeoutSeconds: 30
           readinessProbe:
             httpGet:
               path: /ping
-              port: nodejs-port
+              port: 3001
             initialDelaySeconds: 15
             timeoutSeconds: 30
