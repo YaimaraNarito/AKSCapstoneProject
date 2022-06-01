@@ -31,18 +31,27 @@ https://www.terraform.io/downloads
 
  ## Usage
  1. Create github repo and clone all files into it
- 2. Login to Azure on command line using: 
+ 2. Create a Docker container
+ ```
+ docker build -t davidsdeveloper/llyd:v2 .
+
+ docker run -it --name llyd -d -p 3001:3001 davidsdeveloper/llyd:v2
+
+ docker push davidsdeveloper/llyd:v2
+
+ ```
+ 3. Login to Azure on command line using: 
     ```
     az login
     ```
- 3. Create namespaces deveopment, qa, staging, production:
+ 4. Create namespaces deveopment, qa, staging, production:
     ```
     kubectl create ns development
     kubectl create ns qa
     kubectl create ns staging
     kubectl create ns production
     ```
- 4. Create the cluster:
+ 5. Create the cluster:
 
     Run Terraform commands
     ```
@@ -51,13 +60,13 @@ https://www.terraform.io/downloads
     terraform plan -out tfplan.out
     terraform apply tfplan.out
     ```
- 5. Login to cluster using:
+ 6. Login to cluster using:
      ```
      az aks get-credentials --resource-group aks-rg3 --name aks-cluster
      ```
- 6. Create a Project on dev.azure.com
- 7. Create build pipeline connected to github repo associated with code source, link to Azure subscription
- 8. Create release pipeline with artifact and stages (development, qa, staging, production)
+ 7. Create a Project on dev.azure.com
+ 8. Create build pipeline connected to github repo associated with code source, link to Azure subscription
+ 9. Create release pipeline with artifact and stages (development, qa, staging, production)
 
  ## Screenshots
 ![Alt text](Screenshots/1_Create_new_pipeline_in_azure_devops.png)
@@ -69,6 +78,27 @@ https://www.terraform.io/downloads
 ![Alt text](Screenshots/7_Built_Successfull.png)
 ![Alt text](Screenshots/8_Deploy_Successfull.png)
 
+##Testing
+Run this commands on your CLI then get the EXTERNAL-IP of each to test your application on the browser.
+
+```
+kubectl get svc -n development
+kubectl get svc -n qa
+kubectl get svc -n staging
+kubectl get svc -n production
+```
+In the browser:
+
+```
+<EXTERNAL-IP>/ping
+<EXTERNAL-IP>/version
+<EXTERNAL-IP>/<random-number>
+```
+Example:
+Development: 20.106.44.210/ping
+QA: 20.106.45.162/ping
+Staging: 20.106.45.115/ping
+Production: 20.106.45.120/ping
 
  ## License
 This project is not licensed
