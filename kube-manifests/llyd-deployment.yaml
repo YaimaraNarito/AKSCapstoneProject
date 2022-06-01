@@ -19,4 +19,15 @@ spec:
           image: azurecontainerregistryyn.azurecr.io/llyd
           ports:
             - containerPort: 80
-            
+          livenessProbe:
+            httpGet:
+              path: /
+              port: nodejs-port
+            initialDelaySeconds: 15
+            timeoutSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /
+              port: nodejs-port
+            initialDelaySeconds: 15
+            timeoutSeconds: 30
